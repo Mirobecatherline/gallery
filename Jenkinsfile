@@ -22,20 +22,14 @@ pipeline {
                 }
             }
         }
-      //  stage('Run Tests') {  
-   // steps {
-     //   script {
-      //      sh 'npm test'
-      //  }
-   // }
-//}
-  //      stage('Deploy to Render') {
-   //         steps {
-    //            script {
-     //               sh 'node server' //  server entry point
-    //            }
-      //      }
-      //  }
+
+        stage('Run Tests') {  
+    steps {
+        script {
+            sh 'npm test'
+        }
+   }
+}
 
         stage('Deploy to Render122') {
                         steps {
